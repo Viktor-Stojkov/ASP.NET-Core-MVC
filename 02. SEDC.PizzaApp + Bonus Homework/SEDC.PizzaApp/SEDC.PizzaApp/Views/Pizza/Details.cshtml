@@ -1,0 +1,14 @@
+﻿@using SEDC.PizzaApp.Models.Domain
+@model Pizza
+
+<h2>Details: </h2>
+<p>@Model.Name</p>
+<p>@Model.Price</p>
+
+@*Models for PizzaApp Homework*@
+<h2><br>Details with modern PizzaApp Homework: </h2>
+<p>PizzaName: @ViewBag.PizzaViewModel.Name</p>
+<p>Price: @ViewBag.PizzaViewModel.Price DEN.</p>
+<p>PizzaSize: @ViewBag.PizzaViewModel.PizzaSize type.</p>
+
+<h4>@ViewData["Date"]</h4>

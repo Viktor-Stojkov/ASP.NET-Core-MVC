@@ -1,0 +1,15 @@
+﻿@using SEDC.PizzaApp.Models.ViewModels
+@model List<PizzaViewModel>
+
+<h2>These are our pizzas:</h2>
+
+@for (int i = 0; i < Model.Count(); i++) //Model == List<Pizza>
+{
+    <p>@Model[i].Name - @Model[i].Price</p>
+
+    <br>
+    <p>@Model[i].Name <strong>Jakomo</strong></p>
+    <p>@Model[i].PizzaSize <em>type</em></p>
+    <p>@Model[i].Price DEN</p>
+}
+<h4>@ViewData["Date"]</h4>
